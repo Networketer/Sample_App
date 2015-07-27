@@ -1,6 +1,18 @@
-<h1>Sample App Help</h1>
-<p>
-    This is the Help page for the Sample App:
-    <li> <a href= "http://www.railstutorial.org/#help"> Rails Help</a></li>
-    <li> <a href= "http://www.railstutorial.org/book"> Ayy IMAO</a></li>
-</p>
+<% provide(:title, "Help") %>
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title><%= yield(:title) %> | Ruby on Rails Sample App</title>
+    </head>
+    
+    <body>
+        <h1> Help </h1>
+        <p>
+            This is the Help page for the Sample App:
+            <li> <a href= "http://www.railstutorial.org/#help"> Rails Help</a></li>
+            <li> <a href= "http://www.railstutorial.org/book"> The Book</a></li>
+        </p>
+    </body>
+    
+</html>
